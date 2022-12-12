@@ -6,7 +6,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
 }
-
 .bg-primary {
     color: #8C30F5 !important;
 }
@@ -79,7 +78,7 @@ header p{
 .wrapper-local {
     width:50%;
     margin-left:100px;
-    padding-top:150px;
+    padding-top:100px;
 }
 
 
