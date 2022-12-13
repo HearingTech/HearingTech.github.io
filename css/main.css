@@ -68,12 +68,41 @@ header p{
     padding-bottom: 300px; 
 }
 
-.mapa {
-    background: url(../img/angel4.jpg);
+.mapaangel {
+    background: url(../img/angelinf.jpg);
     width:100%;
     height:550px;
 }
-
+.mapaartes {
+    background: url(../img/artesinf.jpg);
+    width:100%;
+    height:550px;
+}
+.mapachapultepec {
+    background: url(../img/chapultepecinf.jpg);
+    width:100%;
+    height:550px;
+}
+.maparevolucion {
+    background: url(../img/revolucioninf.jpg);
+    width:100%;
+    height:550px;
+}
+.mapacatedral {
+    background: url(../img/catedralinf.jpg);
+    width:100%;
+    height:550px;
+}
+.mapateatro {
+    background: url(../img/teatroinf.jpg);
+    width:100%;
+    height:550px;
+}
+.mapabaguju {
+    background: url(../img/bagujuinf.jpg);
+    width:100%;
+    height:550px;
+}
 
 .wrapper-local {
     width:50%;
