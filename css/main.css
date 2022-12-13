@@ -61,7 +61,7 @@ header p{
 
 /*===================SECCION NUESTRO EQUIPO MAPA==========================*/
 #local {
-    margin-top:50px;
+    /*margin-top:50px;*/
     background-color: #f3f3f3;
     display:flex;
     justify-content: center; 
