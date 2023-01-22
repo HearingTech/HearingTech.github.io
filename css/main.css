@@ -6,6 +6,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
 }
+.btn-light {
+    color: #8C30F5 !important;
+}
 .bg-primary {
     color: #8C30F5 !important;
 }
