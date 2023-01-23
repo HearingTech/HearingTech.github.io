@@ -9,34 +9,40 @@
     <link rel="stylesheet" href="./css/main.css">
   </head>
   <body>
-  <!-- ========================================= -->
-  <!-- Encabezado -->
-  <!-- ========================================= -->
-  <header class="container-fluid d-flex justify-content-center">
-    <p class="text-light mb-0 p-2 fs-2 fw-bold">TecnoInc.</p>
-  </header>
-  <nav class="navbar navbar-expand-lg bg-light p-3" id="menu">
-  <div class="container-fluid ps-0">
-  <a class="navbar-brand me-0 my-auto" href="inicio.html"><img src="./img/logo.png" alt="logo" width="45" height="45"></a>
-    <button class="navbar-toggler mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item rounded mx-3">
-          <a class="nav-link" href="cdmx.html">Ciudad de México</a>
-        </li>
-        <li class="nav-item rounded mx-3">
-          <a class="nav-link" href="guju.html">Guanajuato</a>
-        </li>
-         <li class="nav-item rounded mx-3">
-          <a class="nav-link" href="https://drive.google.com/file/d/1AqsjBpIPLkEc9j-QoPvSYH1iPCKqelhP/view?usp=share_link">Descarga nuestra App</a>
-        </li>
-        <li id="google_translate_element" class="google py-2 mx-3"></li>
-       </ul>
-    </div>
-  </div>
-  </nav>
+    <!-- ========================================= -->
+    <!-- Encabezado -->
+    <!-- ========================================= -->
+    <header class="container-fluid d-flex justify-content-center">
+        <p class="text-light mb-0 p-2 fs-2 fw-bold">TecnoInc.</p>
+    </header>
+    <!-- ========================================= -->
+    <!-- Barra de navegacion -->
+    <!-- ========================================= -->
+    <nav class="navbar navbar-expand-lg bg-light p-3" id="menu">
+        <div class="container-fluid ps-0">
+            <a class="navbar-brand me-0 my-auto" href="inicio.html"><img src="./img/logo.png" alt="logo" width="45" height="45"></a>
+            <button class="navbar-toggler mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item rounded mx-3">
+                        <a class="nav-link" href="cdmx.html">Ciudad de México</a>
+                    </li>
+                    <li class="nav-item rounded mx-3">
+                        <a class="nav-link" href="guju.html">Guanajuato</a>
+                    </li>
+                    <li class="nav-item rounded mx-3">
+                        <a class="nav-link" href="https://drive.google.com/file/d/1AqsjBpIPLkEc9j-QoPvSYH1iPCKqelhP/view?usp=share_link">Descarga nuestra App</a>
+                    </li>
+                    <li class="nav-item logged-in rounded mx-3" style="diplay: none;">
+                        <a class="nav-link" href="index.html" id="logout">Cerrar sesión</a>
+                    </li>
+                    <li id="google_translate_element" class="google py-2 mx-3"></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
   <!-- ========================================= -->
   <!-- Slides -->
   <!-- ========================================= -->
@@ -74,8 +80,6 @@
     <h1 class="p-3 fs-2 border-top border-3">Una solución para turistas que visitan<span class="text-primary"> México</span> y <span class="text-primary"> Guanajuato</span></h1>
     <p class="p-3 fs-4"><span class="text-primary">Mexi Tour</span> es un proyecto que te ayudará a encontrar los mejores lugares para visitar en la Ciudad de México y la capital de Guanajuato</p>
   </section>
-
-
   <section class="container-fluid">
   <div class="w-75 m-auto text-center">
         <h1 class="p-3 mb-5 fs-1 border-top border-3">Elige la ciudad</h1>
@@ -133,40 +137,83 @@
         </div>
      </div>
   </section>
+    <!-- ========================================= -->
+    <!-- Pie de pagina -->
+    <!-- ========================================= -->
+    <footer class="w-100 d-flex align-items justify-content-center flex-wrap">
+        <p class="fs-5 px-3 pt-3"><img src="./img/logob.png" alt="logob" width="85" height="85"></p>
+        <p class="fs-5 px-3 pt-5 text-light">TecnoInc. &copy; Todos los Derechos Reservados 2022 </p>
+        <div class="px-1 pt-5" id="iconos">
+            <a href="https://www.facebook.com/Naruchija"><i class="bi bi-facebook"></i></a>
+            <a href="https://twitter.com/Andres_dan_Ruiz"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/jos%C3%A9-eduardo-guti%C3%A9rrez-hern%C3%A1ndez-0a3375216/"><i class="bi bi-linkedin"></i></a>
+        </div>
+    </footer>
 
-  <!-- ========================================= -->
-  <!-- Equipo -->
-  <!-- ========================================= -->
-  <section>
-    <div class="w-75 m-auto text-center" id="equipo">
-        <h1 class="p-3 mb-5 fs-2 border-top border-3">Desarrolladores de<span class="text-primary"> Mexi Tour</span></h1>
-        <p class="fs-4"> <img src="./img/Lalo.png" alt="lalo" width="65" height="65"> Gutiérrez Hernández Jose Eduardo</p>
-        <p class="fs-4"> <img src="./img/Mau.png" alt="mau" width="39" height="62"> Márquez Valdes Carlos Mauricio</p>
-        <p class="fs-4"> <img src="./img/Andres.png" alt="andres" width="65" height="65"> Morales Ruiz Andres Isaac</p>
-    </div>
-  </section>
-  <!-- ========================================= -->
-  <!-- Pie de pagina -->
-  <!-- ========================================= -->
-  <footer class="w-100 d-flex align-items justify-content-center flex-wrap">
-    <p class="fs-5 px-3 pt-3"><img src="./img/logob.png" alt="logob" width="85" height="85"></p>
-    <p class="fs-5 px-3 pt-5 text-light">TecnoInc. &copy; Todos los Derechos Reservados 2022 </p>
-  <div class="px-1 pt-5" id="iconos">
-    <a href="https://www.facebook.com/Naruchija"><i class="bi bi-facebook"></i></a>
-    <a href="https://twitter.com/Andres_dan_Ruiz"><i class="bi bi-twitter"></i></a>
-    <a href="https://www.linkedin.com/in/jos%C3%A9-eduardo-guti%C3%A9rrez-hern%C3%A1ndez-0a3375216/"><i class="bi bi-linkedin"></i></a>
-  </div>
-  </footer>
+    <!-- ========================================= -->
+	<!-- JS bootstrap -->
+	<!-- ========================================= -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- ========================================= -->
+	<!-- JS firebase -->
+	<!-- ========================================= -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
+
+     <!--   // TODO: Replace the following with your app's Firebase project configuration
+        // See: https://firebase.google.com/docs/web/learn-more#config-object
+        // Initialize Firebase Authentication and get a reference to the service
+        // https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAz0Jcut-1Zgzkg7rIb2-XBofCxhhD437g",
+            authDomain: "tecnoinc-ea7df.firebaseapp.com",
+            projectId: "tecnoinc-ea7df",
+            storageBucket: "tecnoinc-ea7df.appspot.com",
+            messagingSenderId: "1091782327146",
+            appId: "1:1091782327146:web:cf3452e7e229cc1587c313"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const fs = firebase.firestore();
+    </script>
+
+    <!-- ========================================= -->
+	<!-- JS Google -->
+	<!-- ========================================= -->
     <script type="text/javascript">
         function googleTranslateElementInit() {
 	        new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,de,es,pt,fr,ja', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
         }
     </script>
-
-<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!-- ========================================= -->
+	<!-- JS -->
+	<!-- ========================================= -->
+    <script>
+        function redireccionar(dir){ location.href="index.html";}
+        const loginCheck = user => {
+	        if (user) {
+		        loggedInLinks.forEach(link => link.style.display = 'block');
+		        loggedOutLinks.forEach(link => link.style.display = 'none');
+	        } else {
+		        loggedInLinks.forEach(link => link.style.display = 'none');
+		        loggedOutLinks.forEach(link => link.style.display = 'block');
+	        }
+        };
+        const logout = document.querySelector('#logout');
+	    logout.addEventListener('click', e => {
+            e.preventDefault(); 
+            auth.signOut();
+            redireccionar();
+        });
+    </script>
   </body>
 </html>

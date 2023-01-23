@@ -1,5 +1,5 @@
 ﻿<!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,45 +16,63 @@
 		<p class="text-light mb-0 p-2 fs-2 fw-bold">TecnoInc.</p>
 	</header>
 	<!-- ========================================= -->
-	<!-- Formulario -->
+	<!-- Barra de navegacion -->
 	<!-- ========================================= -->
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-light p-3" id="menu">
+        <div class="container-fluid ps-0">
             <a class="navbar-brand me-0 my-auto" href="inicio.html"><img src="./img/logo.png" alt="logo" width="45" height="45"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signinModal">SignIn</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item logged-out rounded mx-3" style="diplay: none;">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signinModal">Iniciar sesión</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signupModal">SignUp</a>
+                    <li class="nav-item logged-out rounded mx-3" style="diplay: none;">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signupModal">Crear cuenta</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="logout">Log out</a>
+                    <li class="nav-item logged-in rounded mx-3" style="diplay: none;">
+                        <a class="nav-link" href="#" id="logout">Cerrar sesión</a>
                     </li>
+                    <li id="google_translate_element" class="google py-2 mx-3"></li>
                 </ul>
             </div>
         </div>
     </nav>
-
+    <!-- ========================================= -->
+	<!-- Contenido -->
+	<!-- ========================================= -->
     <div class="container p-4">
         <div class="row">
-            <div class="col-md-6 offset-md-3">
+            <div class="col-md-6 offset-md-3 d-grid gap-2">
                 <ul class="list-group posts">
                 </ul>
             </div>
         </div>
     </div>
+    <section class="w-50 mx-auto text-center" id="intro">
+        <h1 class="p-3 fs-2 border-top border-3">Una solución para turistas que visitan<span class="text-primary"> México</span> y <span class="text-primary"> Guanajuato</span></h1>
+        <p class="p-3 fs-4"><span class="text-primary">Mexi Tour</span> es un proyecto que te ayudará a encontrar los mejores lugares para visitar en la Ciudad de México y la capital de Guanajuato</p>
+    </section>
+    <!-- ========================================= -->
+    <!-- Equipo -->
+    <!-- ========================================= -->
+    <section>
+        <div class="w-75 m-auto text-center" id="equipo">
+            <h1 class="p-3 mb-5 fs-2 border-top border-3">Desarrolladores de<span class="text-primary"> Mexi Tour</span></h1>
+            <p class="fs-4"> <img src="./img/Lalo.png" alt="lalo" width="65" height="65"> Gutiérrez Hernández Jose Eduardo</p>
+            <p class="fs-4"> <img src="./img/Mau.png" alt="mau" width="39" height="62"> Márquez Valdes Carlos Mauricio</p>
+            <p class="fs-4"> <img src="./img/Andres.png" alt="andres" width="65" height="65"> Morales Ruiz Andres Isaac</p>
+        </div>
+    </section>
 
-	<!-- =====  Modal  SignUp ===== -->
+	<!-- =====  Modal  de Creacion de cuenta ===== -->
     <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">SignUp</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Crear cuenta</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -62,21 +80,21 @@
                         <div class="form-group">
                             <input type="text" id="signup-email" class="form-control mb-2" placeholder="email" required>
                         </div>
-                        <div class="form-group">
-                            <input type="password" id="signup-password" class="form-control mb-2" placeholder="Password" required>
+                        <div class="form-group d-grid gap-2">
+                            <input type="password" id="signup-password" class="form-control mb-2" placeholder="Contraseña" required>
+                            <button type="submit" class="btn btn-light btn-bc-primary">Crear</button>
                         </div>
-                        <button type="submit" class="btn btn-light btn-bc-primary">Singup</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-    <!-- =====  Modal  SignIp ===== -->
+    <!-- =====  Modal  de Inicio de sesion ===== -->
     <div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">SignIn</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar sesión</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -85,27 +103,33 @@
                             <input type="text" id="login-email" class="form-control mb-2" placeholder="email" required>
                         </div>
                         <div class="form-group d-grid gap-2">
-                            <input type="password" id="login-password" class="form-control mb-2" placeholder="Password" required>
-                            <button type="submit" class="btn btn-light btn-bc-primary btn-block">Login</button>
-                            <button type="button" class="btn btn-primary btn-block" id="googleLogin">Login con Google</button>
+                            <input type="password" id="login-password" class="form-control mb-2" placeholder="Contraseña" required>
+                            <button type="submit" class="btn btn-light btn-bc-primary">Iniciar sesión</button>
+                            <button type="button" class="btn btn-primary" id="googleLogin">Iniciar sesión con Google</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-
-
-
-
-
+    <!-- ========================================= -->
+    <!-- Pie de pagina -->
+    <!-- ========================================= -->
+    <footer class="w-100 d-flex align-items justify-content-center flex-wrap">
+        <p class="fs-5 px-3 pt-3"><img src="./img/logob.png" alt="logob" width="85" height="85"></p>
+        <p class="fs-5 px-3 pt-5 text-light">TecnoInc. &copy; Todos los Derechos Reservados 2022 </p>
+        <div class="px-1 pt-5" id="iconos">
+            <a href="https://www.facebook.com/Naruchija"><i class="bi bi-facebook"></i></a>
+            <a href="https://twitter.com/Andres_dan_Ruiz"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/jos%C3%A9-eduardo-guti%C3%A9rrez-hern%C3%A1ndez-0a3375216/"><i class="bi bi-linkedin"></i></a>
+        </div>
+    </footer>
 
     <!-- ========================================= -->
 	<!-- JS bootstrap -->
 	<!-- ========================================= -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-
 
     <!-- ========================================= -->
 	<!-- JS firebase -->
@@ -135,6 +159,16 @@
         const auth = firebase.auth();
         const fs = firebase.firestore();
     </script>
+
+    <!-- ========================================= -->
+	<!-- JS Google -->
+	<!-- ========================================= -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+	        new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,de,es,pt,fr,ja', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <!-- ========================================= -->
 	<!-- JS -->
